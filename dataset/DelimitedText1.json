@@ -1,0 +1,40 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "credit_data.csv",
+				"container": "cust"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "creditid",
+				"type": "String"
+			},
+			{
+				"name": "cardtype",
+				"type": "String"
+			},
+			{
+				"name": "creditname",
+				"type": "String"
+			},
+			{
+				"name": "creditscore",
+				"type": "String"
+			}
+		]
+	}
+}
