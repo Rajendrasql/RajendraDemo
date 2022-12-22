@@ -4,6 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "TestEnviron"
+		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"value": "bolb"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://keyvault2212.vault.azure.net/"
 		}
 	}
 }
